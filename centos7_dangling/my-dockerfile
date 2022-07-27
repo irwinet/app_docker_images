@@ -1,0 +1,5 @@
+FROM centos:7
+
+RUN echo "hola" > /tmp/hola && echo "hola1" > /tmp/hola1
+RUN echo "bye1" > /tmp/bye1
+RUN echo "test1" > /tmp/test1
