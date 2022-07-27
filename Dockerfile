@@ -29,4 +29,7 @@ RUN echo "$(whoami)" > /tmp/user2.html
 USER root
 RUN cp /tmp/user2.html /var/www/html/user2.html
 
-CMD apachectl -DFOREGROUND
+COPY run.sh /run.sh
+
+CMD sh /run.sh
+#CMD apachectl -DFOREGROUND
